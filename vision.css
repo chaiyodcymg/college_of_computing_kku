@@ -1,0 +1,17 @@
+body{
+     /* background-color: rgba(233, 233, 233, 0.082); */
+       font-family: 'Kanit', sans-serif;
+        
+}
+
+.head-border{
+    color: rgb(68, 120, 216);
+    border-bottom: 2px solid rgb(158, 158, 158);
+}
+.head1{
+    color: rgb(50, 94, 175);
+    
+ 
+}
+
+

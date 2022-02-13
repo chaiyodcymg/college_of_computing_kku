@@ -1,0 +1,196 @@
+
+body{
+     /* background-color: rgba(233, 233, 233, 0.082); */
+       font-family: 'Kanit', sans-serif;
+        background-color: rgb(255, 255, 255);
+        overflow-x: hidden;
+}
+
+p.text {
+    width: auto;
+    height: 60px;
+    margin: 0;
+    display: grid;
+    text-align: center;
+    color: white;
+    font-size: 1.25em;
+    align-content: center;
+    background: linear-gradient(rgb(97, 97, 97), rgb(92, 92, 92));
+    opacity: 0.8;
+    display: none;
+}
+
+.picture {
+    width: 100%;
+}
+.album{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s ease-in-out;
+}
+.album1:hover p.text{
+    display: grid;
+    text-align: center;
+    color: white;
+    transform: translateY(10px);
+}
+.album2:hover p.text{
+    display: grid;
+    text-align: center;
+    color: white;
+}
+.album3:hover p.text{
+    display: grid;
+    text-align: center;
+    color: white;
+}
+.album4:hover p.text{
+    display: grid;
+    text-align: center;
+    color: white;
+}
+.album5:hover p.text{
+    display: grid;
+    text-align: center;
+    color: white;
+}
+.album6:hover p.text{
+    display: grid;
+    text-align: center;
+    color: white;
+}
+.album7:hover p.text{
+    display: grid;
+    text-align: center;
+    color: white;
+}
+.album8:hover p.text{
+    display: grid;
+    text-align: center;
+    color: white;
+}
+.album9:hover p.text{
+    display: grid;
+    text-align: center;
+    color: white;
+}
+.album10:hover p.text{
+    display: grid;
+    text-align: center;
+    color: white;
+}
+.album11:hover p.text{
+    display: grid;
+    text-align: center;
+    color: white;
+}
+.album12:hover p.text{
+    display: grid;
+    text-align: center;
+    color: white;
+}
+.album1{
+    background-image: url("img/pic_activity_01.jpg");
+}
+.album2{
+    background-image: url("img/pic_activity_02.jpg");
+}
+.album3{
+    background-image: url("img/pic_activity_03.jpg");
+}
+.album4{
+    background-image: url("img/pic_activity_04.jpg");
+}
+.album5{
+    background-image: url("img/pic_activity_05.jpg");
+}
+.album6{
+    background-image: url("img/pic_activity_06.jpg");
+}
+.album7{
+    background-image: url("img/pic_activity_07.jpg");
+}
+.album8{
+    background-image: url("img/pic_activity_08.jpg");
+}
+.album9{
+    background-image: url("img/pic_activity_09.jpg");
+}
+.album10{
+    background-image: url("img/pic_activity_10.jpg");
+}
+.album11{
+    background-image: url("img/news.jpg");
+}
+.album12 {
+    background-image: url("img/news.jpg");
+}
+
+@media only screen and (max-width: 986px) {
+    p.text {
+        font-size: 1.15em;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    p.text {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:576px) {
+    #motion-effect2 {
+        display: contents;
+    }
+
+    #motion-effect {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .head-field1 {
+        font-weight: 600;
+        font-size: 26px;
+        color: rgb(29, 75, 134);
+    }
+
+    .head-field2 {
+        font-weight: 500;
+        font-size: 20px;
+        color: rgb(29, 75, 134);
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    .head-field1 {
+        font-weight: bold;
+        font-size: 30px;
+        color: rgb(29, 75, 134);
+    }
+
+    .head-field2 {
+        font-weight: bold;
+        font-size: 20px;
+        color: rgb(29, 75, 134);
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    .head-field1 {
+        font-weight: bold;
+        font-size: 32px;
+        color: rgb(29, 75, 134);
+    }
+
+    .head-field2 {
+        font-weight: bold;
+        font-size: 22px;
+        color: rgb(29, 75, 134);
+    }
+
+}

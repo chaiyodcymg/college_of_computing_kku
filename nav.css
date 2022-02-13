@@ -1,0 +1,44 @@
+
+ .nav-box{
+     border-top: 2px solid rgb(67, 142, 228);
+    /* background-color: rgb(243, 243, 243); */
+}
+.nav-head{
+    /* font-size: ; */
+    display: none;
+}
+#dash-nav{
+    display: none;
+}
+ #plus-nav,#dash-nav{
+    font-size: 22px;
+}
+
+.nav-box {
+    background-color: white;
+}
+.nav-box .navbar-toggler:hover{
+background-color: rgb(238, 238, 238);
+}
+.nav-box .navbar-toggler:focus{
+    outline: none;
+}
+.nav-box .nav-link{
+    color: black;
+}
+.nav-box .nav-link:hover{
+     color: rgb(33, 134, 192);
+    /* border-bottom: 2px solid rgb(33, 134, 192); */
+}
+.nav-box .active{
+    cursor: context-menu;
+    color: rgb(33, 134, 192);
+    border-bottom: 2px solid rgb(33, 134, 192);
+}
+@media screen  and (max-width:991px){
+    .nav-head{
+        margin-left:0 ;
+    display: inline-block;
+}
+    
+}

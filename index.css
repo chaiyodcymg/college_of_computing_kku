@@ -1,0 +1,414 @@
+
+ body{
+     background-color: rgba(233, 233, 233, 0.082);
+     font-family: 'Kanit', sans-serif;
+ }
+ 
+ .fas{
+    transition:  0.2s ease-in-out;
+    font-size: 30px;
+    margin: auto;
+
+ }
+ .fa-child{
+     color: rgb(150, 59, 150);
+ }
+ .fa-book-reader{
+     color: rgb(73, 184, 147);
+ }
+ .fa-users{
+     color: rgb(46, 84, 189);
+ }
+ .fa-user-graduate{
+     color: rgb(228, 159, 32);
+ }
+ .nav-link {
+    
+      color: black;
+ }
+
+  .nav-item:hover .fas{
+      transform: translateY(-3px);
+      color: rgb(33, 134, 192);
+    
+      
+  }
+.for-person-all{
+
+    margin: 4rem auto;
+    width: 100%;
+    height: auto;
+    /* border-top: 1px solid black;
+    border-bottom: 1px solid black; */
+    /* background-color: rgb(208, 248, 253); */
+   
+}
+/* .for-person-all .nav li{
+  margin-right:  1rem;
+} */
+.news{
+   color: rgb(106, 170, 212);
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+.news-box{
+  
+   background-color: rgba(235, 235, 235, 0.329);
+    margin: 0  auto 2rem auto;
+}
+
+
+ .nav-item .nav-link{
+ font-size: 17px ;
+
+    border-radius: unset !important;
+    padding: 10px !important;
+}
+.for-person-all .nav-item .nav-link{
+     border-bottom: 2px solid rgba(51, 116, 177, 0) !important;
+}
+  .for-person-all .nav-item .nav-link:hover{
+    
+      color: rgb(51, 116, 177) !important; 
+ border-bottom: 2px solid rgb(51, 116, 177) !important;
+ }
+.nav-item .active{
+    cursor: context-menu !important;
+    background-color: rgba(217, 250, 255, 0) !important;
+   color: rgb(51, 116, 177) !important; 
+    border-bottom: 2px solid rgb(51, 116, 177) !important;
+}
+.card-img-top{
+    width:100% ;
+    height: 20vh;
+
+}
+.card-img-top-url-1{
+     background-image: url('img/news2.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+.card-img-top-url-2{
+     background-image: url('img/news2.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+.card-img-top-url-3{
+     background-image: url('img/news2.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+.card-img-top-url-4{
+     background-image: url('img/news2.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+.col-lg-3 {
+   
+    /* width: 20vw; */
+    /* position: relative; */
+  
+    margin: 2rem auto   ;
+     
+    /* transition: 1s; */
+     
+}
+.col-lg-3 :hover {
+    opacity: 0.9;
+}
+.card-body{
+
+ background-color: rgb(240, 240, 240);
+}
+.card-img-overlay {
+    opacity: 1;
+     display: none;
+    /* position: relative; */
+    margin-top:2rem ;
+ 
+   
+  
+}
+.bi-link-45deg{
+    /* width: 80px;
+    height: auto; */
+ 
+    font-size: 30px;
+    background-color: rgb(82, 186, 218);
+    padding: 3px 10px;
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+   border-radius: 50%;
+   cursor: pointer;
+} 
+.bi-link-45deg:hover{
+       color: black;
+}
+
+.card:hover .card-img-overlay{
+    opacity: 1;
+    display: block;
+   
+}
+.card:hover {
+      background-color: rgb(192, 230, 252);
+      
+}
+.tab-content{
+        padding: 2rem 0;
+ 
+}
+
+
+.bi-calendar2-week-fill{
+    font-size: 17px;
+    color:rgb(51, 116, 177) ;
+}
+.card-body .text-calendar{
+    font-size: 14px;
+    color:rgb(51, 116, 177) ;
+    
+}
+.nextpage{
+    font-size: 17px;
+    width: 150px;
+    height: 50px;
+    padding-top: 11px ;
+    color: rgb(51, 98, 160);
+    border: 2px solid rgb(65, 119, 189);
+     transition:  0.3s ease-in-out;
+}
+.nextpage:hover{
+      transform: translateY(-3px);
+        color: white;
+    background-color: rgb(65, 119, 189);
+}
+.bi-arrow-right{
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* *********************************accordion*************************************/
+.text-qick-link{
+     font-size: 20px;
+     font-weight: bold;
+     display: flex;
+     justify-content: center;
+    /* text-align: center; */
+    color: white;
+}
+.text-qick-link:hover{
+color: rgb(235, 235, 235);
+}
+#arrow-up-quicklink{
+    display: none;
+    margin-left: 1rem;
+} 
+#arrow-down-quicklink{
+ 
+     margin-left: 1rem;
+} 
+
+
+
+.img-qicklink-1{
+    width: 100%;
+    background-image: url('https://sc.kku.ac.th/sciweb/images/homepage/link-scioffice.jpg');
+    background-position:center;
+    background-size:cover;
+
+    background-repeat: no-repeat;
+
+  
+    
+   
+}
+.name-box-qick-link{
+    text-align: center;
+    color: black;
+    /* background-color: palevioletred ; */
+}
+#accordion .head-card {
+        background-color: rgb(51, 98, 160); 
+}
+
+/* *********************************accordion*************************************/
+
+
+
+
+/**************************** footer ***********************************/
+
+
+	
+/**************************** footer ***********************************/
+/* .carousel-inner{
+    width: 100%;
+    height: 100%;
+} */
+/*******************************carousel************************************/
+  .carousel-inner img {
+    width: 100%;
+    height:100%;
+  }
+
+/* ******************************************** */
+img {
+            width: 100%;
+            height: 250px;
+        }
+        .group {
+            
+            padding: 20px;
+            width: 300px;
+            height: auto;
+        }
+     
+        .box_group a{
+            text-decoration: none;
+            color: black;
+            transform: scale(1);
+        }
+        .box_group:hover{
+            transform: scale(1.01);
+            cursor: pointer;
+        }
+         /* .box_group h3{
+
+         } */
+.field .col-xl-4{
+    margin: auto  ;
+} 
+.field h4{
+   
+    text-align: center;
+}
+  p.text {
+            width: auto;
+            height: 60px;
+            margin: 0;
+            display: grid;
+            text-align: center;
+            color: white;
+            font-size: 1.25em;
+            align-content: center;
+            background: linear-gradient(rgb(97, 97, 97), rgb(92, 92, 92));
+            opacity: 0.8;
+            display: none;
+        
+        }
+
+        .album1:hover p.text {
+            display: grid;
+            text-align: center;
+          
+        }
+
+        .album2:hover p.text {
+            display: grid;
+            text-align: center;
+            
+        }
+
+        .album3:hover p.text {
+            display: grid;
+            text-align: center;
+        
+        }
+
+        .content_picture a {
+            text-decoration: none;
+        }
+
+        .album1 {
+            background-image: url("img/pic_activity_01.jpg");
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+           
+        }
+
+        .album2 {
+            background-image: url("img/pic_activity_02.jpg");
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            
+        }
+
+        .album3 {
+            background-image: url("img/pic_activity_03.jpg");
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+        }
+     
+
+        @media only screen and (max-width: 576px) {
+            p.text {
+                font-size: 1em;
+            }
+        }
+
+        @media screen and (max-width:576px) {
+            #motion-effect2 {
+                display: contents;
+            }
+
+            #motion-effect {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .head-field1 {
+                font-weight: 600;
+                font-size: 26px;
+                color: rgb(29, 75, 134);
+            }
+
+            .head-field2 {
+                font-weight: 500;
+                font-size: 20px;
+                color: rgb(29, 75, 134);
+            }
+        }
+
+
+        @media screen and (min-width:768px) {
+            .head-field1 {
+                font-weight: bold;
+                font-size: 30px;
+                color: rgb(29, 75, 134);
+            }
+
+            .head-field2 {
+                font-weight: bold;
+                font-size: 20px;
+                color: rgb(29, 75, 134);
+            }
+
+        }
+
+        @media screen and (min-width:992px) {
+            .head-field1 {
+                font-weight: bold;
+                font-size: 32px;
+                color: rgb(29, 75, 134);
+            }
+
+            .head-field2 {
+                font-weight: bold;
+                font-size: 22px;
+                color: rgb(29, 75, 134);
+            }
+
+        }

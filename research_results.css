@@ -1,0 +1,119 @@
+
+body{
+     /* background-color: rgba(233, 233, 233, 0.082); */
+       font-family: 'Kanit', sans-serif;
+        
+}
+.row-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 0;
+}
+.charts-css .row{
+    width: 100%;
+    height: 50vh;
+    font-size: 12px;
+}
+
+#motion-effect tr {
+  transition-duration: 0.3s;
+}
+#motion-effect tr:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#motion-effect tr:hover th {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+#motion-effect2 tr {
+  transition-duration: 0.3s;
+}
+#motion-effect2 tr:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#motion-effect2 tr:hover th {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+
+#motion-effect2{
+    display: none;
+}
+
+.table-show {
+  overflow-x:auto;
+   width: 100%;
+}
+.table-show table{
+   border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+
+
+}
+.table-show table th,.table-show table td {
+  text-align: center;
+  padding: 8px;
+}
+.table-show table  tr:nth-child(1){
+background-color: #8ecaff
+}
+.table-show table  tr:nth-child(odd):not( tr:nth-child(1)){
+  background-color: #d9edff
+}
+@media screen  and (max-width:576px){
+  
+#motion-effect2{
+    display: contents;
+}
+   #motion-effect{
+    display: none;
+}
+    
+      
+}
+
+@media screen  and (max-width:768px){
+   .head-field1{
+        font-weight: 600;
+        font-size:26px;
+        color:rgb(29, 75, 134) ;
+    }
+       .head-field2{
+        font-weight: 500;
+        font-size:20px;
+        color:rgb(29, 75, 134) ;
+    }
+}
+
+
+@media screen  and (min-width:768px){
+   .head-field1{
+        font-weight: bold;
+        font-size:30px;
+        color:rgb(29, 75, 134) ;
+    }
+       .head-field2{
+        font-weight: bold;
+        font-size:20px;
+        color:rgb(29, 75, 134) ;
+    }
+   
+}
+@media screen  and (min-width:992px){
+        .head-field1{
+        font-weight: bold;
+        font-size:32px;
+        color:rgb(29, 75, 134) ;
+    }
+       .head-field2{
+        font-weight: bold;
+        font-size:22px;
+        color:rgb(29, 75, 134) ;
+    }
+    
+}

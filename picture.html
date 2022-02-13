@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิทยาลัยการคอมพิวเตอร์</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="picture.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="breadcrumb.css">
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+    <button id="back-to-top" class=" btn back-to-top">
+        <span class="bi bi-chevron-up "></span></button>
+    <div class="search-box-all fix-top">
+        <form class="search-box" action="#">
+            <button class="input-close" type="submit"><i class="bi bi-x"></i></button>
+            <input class="input-search" type="text" placeholder="Search.." name="search">
+            <button class="input-btn" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+    </div>
+    <nav class="navbar navbar-expand-xl navbar-light " style="background-color: rgb(97, 180, 235);">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="Logo" style="width:200px; height: 60px;">
+        </a>
+        <button class=" btn btn-search ml-auto mr-3" id="btn-search"><span class="bi bi-search"></span></button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse navbar-head-collapse " id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown dropdown-head-1">
+                    <a role="button" data-toggle="dropdown" class="btn-link" href="#">
+                        เกี่ยวกับคณะ<span class="bi bi-chevron-down "></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-1">
+                        <li><a class="dropdown-item" href="vision.html">วิสัยทัศน์/พันธกิจ/เป้าหมาย</a></li>
+                        <li><a class="dropdown-item" href="administrator.html">คณะผู้บริหาร</a></li>
+                        <li><a class="dropdown-item" href="branch_head.html">หัวหน้าสาขา</a></li>
+                        <li><a class="dropdown-item" href="department.html">ภาควิชา/สาขา</a></li>
+                        <li><a class="dropdown-item" href="contact.html">ติดต่อคณะ</a></li>
+                        <li><a class="dropdown-item" href="history.html">ประวัติคณะวิทยาลัยการคอมพิวเตอร์</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown dropdown-head-2">
+                    <a role="button" data-toggle="dropdown" class="btn-link " href="#">
+                        การศึกษา <span class="bi bi-chevron-down "></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-2" role="menu">
+                        <li class="dropdown-submenu ">
+                            <a class="dropdown-item drop-sub" href="degree.html">หลักสูตร<span
+                                    class="bi bi-chevron-right ml-3"></span><span
+                                    class="bi bi-chevron-down ml-3"></span></a>
+                            <ul class="dropdown-menu color">
+                                <li><a class="dropdown-item drop2" tabindex="-1" href="degree.html">ปริญญาตรี</a></li>
+                                <li><a class="dropdown-item drop2" href="#">ปริญญาโท</a></li>
+                                <li><a class="dropdown-item drop2" href="#">ปริญญาเอก</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">ทุนการศึกษา</a></li>
+                        <li><a class="dropdown-item" href="#">บริการศึกษา</a></li>
+                        <li><a class="dropdown-item" href="calendar_study.html">ปฎิทินการศึกษา</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item dropdown dropdown-head-3">
+                    <a role="button" data-toggle="dropdown" class="btn-link " href="#">
+                        ข่าวประชาสัมพันธ์
+                        <span class="bi bi-chevron-down "></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-3" role="menu">
+                        <li><a class="dropdown-item" href="news.html">ข่าวล่าสุด</a></li>
+                        <li><a class="dropdown-item" href="#">ทั่วไป</a></li>
+                        <li><a class="dropdown-item" href="#">วิจัย</a></li>
+                        <li><a class="dropdown-item" href="#">วิทยาศาสตร์</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown dropdown-head-6">
+                    <a role="button" data-toggle="dropdown" class="btn-link " href="#">
+                        รางวัลเกียรติยศ <span class="bi bi-chevron-down "></span>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-7" role="menu">
+                        <li><a class="dropdown-item" href="international.html">ระดับนานาชาติ</a></li>
+                        <li><a class="dropdown-item" href="#">ระดับชาติ</a></li>
+                        <li class="dropdown-submenu ">
+                            <a class="dropdown-item drop-sub" href="#">ระดับมหาวิทยาลัย<span
+                                    class="bi bi-chevron-right ml-3"></span><span
+                                    class="bi bi-chevron-down "></span></a>
+                            <ul class="dropdown-menu  color">
+                                <li><a class="dropdown-item drop2" tabindex="-1" href="#">ด้านวิจัย</a></li>
+                                <li><a class="dropdown-item drop2" href="award.html">รางวัลเชิดชูเกียรติสายผู้สอน</a>
+                                </li>
+                                <li><a class="dropdown-item drop2" href="#">รางวัลเชิดชูเกียรติสายสนับสนุน</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">ระดับคณะ</a></li>
+                        <li><a class="dropdown-item" href="professor.html">ศาสตราจารย์ในคณะ</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown dropdown-head-5">
+                    <a role="button" data-toggle="dropdown" class="btn-link" href="#">
+                        ระบบสารสนเทศ<span class="bi bi-chevron-down "></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-5" role="menu">
+                        <li><a class="dropdown-item" href="interest.html">ผู้สนใจเข้าศึกษา</a></li>
+                        <li><a class="dropdown-item" href="#">นักศึกษาปัจจุบัน</a></li>
+                        <li><a class="dropdown-item" href="#">บุคลากร</a></li>
+                        <li><a class="dropdown-item" href="#">ศิษย์เก่า</a></li>
+                        <li><a class="dropdown-item" href="diagram.html">แผนผังเว็บไซต์</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown dropdown-head-4">
+                    <a role="button" data-toggle="dropdown" class="btn-link" href="#">
+                        วิจัย/นวัตกรรม <span class="bi bi-chevron-down "></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-4" role="menu">
+                        <li><a class="dropdown-item" href="research_results.html">ผลงานวิจัย</a></li>
+                        <li><a class="dropdown-item" href="#">ทรัพสินทางปัญญา</a></li>
+                        <li><a class="dropdown-item" href="meet.html">การประชุมวิชาการ</a></li>
+                        <li><a class="dropdown-item" href="#">กลุ่มวิจัยระดับมหาวิทยาลัย</a></li>
+                        <li><a class="dropdown-item" href="#">กองทุนวิจัย</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <button class=" btn btn-search ml-auto mr-3" id="btn-search2"><span class="bi bi-search"></span></button>
+    </nav>
+    <nav aria-label="breadcrumb " class="breadcrumb-all">
+        <ol class="breadcrumb mb-0 ml-3">
+            <li class="breadcrumb-item"><a href="index.html"><span class="bi bi-house-door"></span></a></li>
+            <li class="breadcrumb-item active">อัลบั้ม</li>
+        </ol>
+    </nav>
+    <div class="row  no-gutter justify-content-center  mt-3  mb-3 ">
+        <div class="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 ">
+            <p class="text-center mx-auto mt-3 mb-4  head-field1">อัลบั้ม/ภาพกิจกรรม</p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row no-gutter justify-content-center">
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="album album1 d-flex flex-column justify-content-end my-3">
+                    <p class="text">มุทิตาจิตผู้เกษียณอายุราชการ ประจำปี 2564</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="album album2 d-flex flex-column justify-content-end my-3">
+                    <p class="text">มุทิตาจิตผู้เกษียณอายุราชการ ประจำปี 2564</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="album album3 d-flex flex-column justify-content-end my-3">
+                    <p class="text">มุทิตาจิตผู้เกษียณอายุราชการ ประจำปี 2564</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="album album4 d-flex flex-column justify-content-end my-3">
+                    <p class="text">มุทิตาจิตผู้เกษียณอายุราชการ ประจำปี 2564</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="album album5 d-flex flex-column justify-content-end my-3">
+                    <p class="text">มุทิตาจิตผู้เกษียณอายุราชการ ประจำปี 2564</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="album album6 d-flex flex-column justify-content-end my-3">
+                    <p class="text">มุทิตาจิตผู้เกษียณอายุราชการ ประจำปี 2564</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="album album7 d-flex flex-column justify-content-end my-3">
+                    <p class="text">มุทิตาจิตผู้เกษียณอายุราชการ ประจำปี 2564</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="album album8 d-flex flex-column justify-content-end my-3">
+                    <p class="text">มุทิตาจิตผู้เกษียณอายุราชการ ประจำปี 2564</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="album album9 d-flex flex-column justify-content-end my-3">
+                    <p class="text">มุทิตาจิตผู้เกษียณอายุราชการ ประจำปี 2564</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="album album10 d-flex flex-column justify-content-end my-3">
+                    <p class="text">มุทิตาจิตผู้เกษียณอายุราชการ ประจำปี 2564</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="album album11 d-flex flex-column justify-content-end my-3">
+                    <p class="text">มุทิตาจิตผู้เกษียณอายุราชการ ประจำปี 2564</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="album album12 d-flex flex-column justify-content-end my-3">
+                    <p class="text">มุทิตาจิตผู้เกษียณอายุราชการ ประจำปี 2564</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fulid footer-box mt-5">
+            <div class="row row_css">
+                <div class="col-md-3">
+                    <p class="text-center foot-text">ผู้ใช้งานเว็บไซต์</p>
+                    <ul class="list-group list-group-flush">
+
+                        <li class="list-group-item"><a href="#">สำหรับนักเรียน</a></li>
+                        <li class="list-group-item"><a href="#">สำหรับนักศึกษา</a></li>
+                        <li class="list-group-item"><a href="#">สำหรับบุคลากร</a></li>
+                        <li class="list-group-item"><a href="#">สำหรับศิษย์เก่า</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-center   foot-text">หลักสูตร/การเข้ารับศึกษา</p>
+                    <ul class="list-group list-group-flush">
+
+                        <li class="list-group-item"><a href="#">ปริญญาตรี</a></li>
+                        <li class="list-group-item"><a href="#">ปริญญาโท</a></li>
+                        <li class="list-group-item"><a href="#">ปริญญาเอก</a></li>
+                        <li class="list-group-item"><a href="#">การรับเข้าศึกษา</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-center  foot-text">เชื่อมต่อ</p>
+                    <ul class="list-group list-group-flush">
+
+                        <li class="list-group-item"><a href="#">ข่าวทั้งหมด</a></li>
+                        <li class="list-group-item"><a href="#">ภาควิชา/สาขา</a></li>
+                        <li class="list-group-item"><a href="#">ระบบสารสนเทศ</a></li>
+                        <li class="list-group-item"><a href="#">รางวัลเกียรติยศ</a></li>
+                        <li class="list-group-item"><a href="#">มหาวิทยาลัยขอนแก่น</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="text_footer">
+                        <a href="#">
+                            <h4 class="text_footer_color01">COLLEGE OF COMPUTING</h4>
+                            <h4 class="text_footer_color02">KHON KAEN UNIVERSITY</h4>
+                            <h5 class="text_footer_color03">คณะวิทยาลัยการคอมพิวเตอร์ มหาวิทยาลัยขอนแก่น</h5>
+                        </a>
+                        <p>123 ถ. มิตรภาพ ต.ในเมือง อ.เมือง จ.ขอนแก่น 40002</p>
+                        <a href="#"><span class="bi bi-facebook mr-3"></span></a>
+                        <a href="#"><span class="bi bi-youtube mr-3"></span></a>
+                        <a href="#"><span class="bi bi-twitter"></span></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+
+            $('.collapse2').on('shown.bs.collapse', function () {
+                $("#plus-nav").toggle();
+                $(this).toggleClass("#plus-nav")
+                $("#dash-nav").toggle();
+                $(this).toggleClass("#dash-nav")
+            })
+            $('.collapse2').on('hidden.bs.collapse', function () {
+                $("#plus-nav").toggle();
+                $(this).toggleClass("#plus-nav")
+                $("#dash-nav").toggle();
+                $(this).toggleClass("#dash-nav")
+
+            })
+
+
+            $(".btn-search").click(function () {
+                $(".search-box-all").animate({
+                    height: 'toggle'
+                }, "fast");
+            });
+            $(".input-close").click(function () {
+                $(".search-box-all").animate({
+                    height: 'toggle'
+                }, "fast");
+
+            });
+
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+
+            $('#back-to-top').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0       // สกอลไปบนสุด
+                }, 400);    // เวลา 400 ที่อนิเมชั่นเลื่อนขึ้น เป็น มิลลิเซค
+                return false;
+            });
+
+        });
+    </script>
+</body>
+
+</html>

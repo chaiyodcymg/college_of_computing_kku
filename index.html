@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิทยาลัยการคอมพิวเตอร์</title>
+    <link rel="icon" href="img/logo.png" type="image/png" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script src="https://kit.fontawesome.com/66a50a02fb.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <button id="back-to-top" class=" btn back-to-top">
+        <span class="bi bi-chevron-up "></span></button>
+
+<div class="search-box-all fix-top">
+    <form class="search-box" action="#">
+        <button class="input-close" type="submit"><i class="bi bi-x"></i></button>
+        <input class="input-search" type="text" placeholder="Search.." name="search">
+        <button class="input-btn" type="submit"><i class="bi bi-search"></i></button>
+    </form>
+</div>
+<nav class="navbar navbar-expand-xl navbar-light " style="background-color: rgb(97, 180, 235);">
+    <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="Logo" style="width:200px; height: 60px;">
+    </a>
+
+    <button class=" btn btn-search ml-auto mr-3" id="btn-search"><span class="bi bi-search"></span></button>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse navbar-head-collapse " id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown dropdown-head-1">
+                <a role="button" data-toggle="dropdown" class="btn-link" href="#">
+                    เกี่ยวกับคณะ<span class="bi bi-chevron-down "></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-1">
+                    <li><a class="dropdown-item" href="vision.html">วิสัยทัศน์/พันธกิจ/เป้าหมาย</a></li>
+                    <li><a class="dropdown-item" href="administrator.html">คณะผู้บริหาร</a></li>
+                    <li><a class="dropdown-item" href="branch_head.html">หัวหน้าสาขา</a></li>
+                    <li><a class="dropdown-item" href="department.html">ภาควิชา/สาขา</a></li>
+                    <li><a class="dropdown-item" href="contact.html">ติดต่อคณะ</a></li>
+                    <li><a class="dropdown-item" href="history.html">ประวัติคณะวิทยาลัยการคอมพิวเตอร์</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown dropdown-head-2">
+                <a role="button" data-toggle="dropdown" class="btn-link " href="#">
+                    การศึกษา <span class="bi bi-chevron-down "></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-2" role="menu">
+                    <li class="dropdown-submenu ">
+                        <a class="dropdown-item drop-sub" href="#">หลักสูตร<span
+                                class="bi bi-chevron-right ml-3"></span><span
+                                class="bi bi-chevron-down ml-3"></span></a>
+                        <ul class="dropdown-menu color">
+                            <li><a class="dropdown-item drop2" tabindex="-1" href="degree.html">ปริญญาตรี</a></li>
+                            <li><a class="dropdown-item drop2" href="#">ปริญญาโท</a></li>
+                            <li><a class="dropdown-item drop2" href="#">ปริญญาเอก</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">ทุนการศึกษา</a></li>
+                    <li><a class="dropdown-item" href="#">บริการศึกษา</a></li>
+                    <li><a class="dropdown-item" href="calendar_study.html">ปฎิทินการศึกษา</a></li>
+                
+                </ul>
+            </li>
+            <li class="nav-item dropdown dropdown-head-3">
+                <a role="button" data-toggle="dropdown" class="btn-link " href="#">
+                    ข่าวประชาสัมพันธ์
+                    <span class="bi bi-chevron-down "></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-3" role="menu">
+                    <li><a class="dropdown-item" href="news.html">ข่าวล่าสุด</a></li>
+                    <li><a class="dropdown-item" href="#">ทั่วไป</a></li>
+                    <li><a class="dropdown-item" href="#">วิจัย</a></li>
+                    <li><a class="dropdown-item" href="#">วิทยาศาสตร์</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown dropdown-head-6">
+                <a role="button" data-toggle="dropdown" class="btn-link " href="#">
+                    รางวัลเกียรติยศ <span class="bi bi-chevron-down "></span>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-7" role="menu">
+                    <li><a class="dropdown-item" href="international.html">ระดับนานาชาติ</a></li>
+                    <li><a class="dropdown-item" href="#">ระดับชาติ</a></li>
+                    <li class="dropdown-submenu ">
+                        <a class="dropdown-item drop-sub" href="#">ระดับมหาวิทยาลัย<span
+                                class="bi bi-chevron-right ml-3"></span><span class="bi bi-chevron-down "></span></a>
+                        <ul class="dropdown-menu  color">
+                            <li><a class="dropdown-item drop2" tabindex="-1" href="#">ด้านวิจัย</a></li>
+                            <li><a class="dropdown-item drop2" href="award.html">รางวัลเชิดชูเกียรติสายผู้สอน</a></li>
+                            <li><a class="dropdown-item drop2" href="#">รางวัลเชิดชูเกียรติสายสนับสนุน</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">ระดับคณะ</a></li>
+                    <li><a class="dropdown-item" href="professor.html">ศาสตราจารย์ในคณะ</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown dropdown-head-5">
+                <a role="button" data-toggle="dropdown" class="btn-link" href="#">
+                    ระบบสารสนเทศ<span class="bi bi-chevron-down "></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-5" role="menu">
+                    <li><a class="dropdown-item" href="interest.html">ผู้สนใจเข้าศึกษา</a></li>
+                    <li><a class="dropdown-item" href="#">นักศึกษาปัจจุบัน</a></li>
+                    <li><a class="dropdown-item" href="#">บุคลากร</a></li>
+                    <li><a class="dropdown-item" href="#">ศิษย์เก่า</a></li>
+                    <li><a class="dropdown-item" href="diagram.html">แผนผังเว็บไซต์</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown dropdown-head-4">
+                <a role="button" data-toggle="dropdown" class="btn-link" href="#">
+                    วิจัย/นวัตกรรม <span class="bi bi-chevron-down "></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-4" role="menu">
+                    <li><a class="dropdown-item" href="research_results.html">ผลงานวิจัย</a></li>
+                    <li><a class="dropdown-item" href="#">ทรัพสินทางปัญญา</a></li>
+                    <li><a class="dropdown-item" href="meet.html">การประชุมวิชาการ</a></li>
+                    <li><a class="dropdown-item" href="#">กลุ่มวิจัยระดับมหาวิทยาลัย</a></li>
+                    <li><a class="dropdown-item" href="#">กองทุนวิจัย</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <button class=" btn btn-search ml-auto mr-3" id="btn-search2"><span class="bi bi-search"></span></button>
+</nav>
+
+        
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+            <li data-target="#demo" data-slide-to="5"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.sc.kku.ac.th/scienceweb/images/head/20210909-054642_.jpeg" alt="Los Angeles" width="1100" height="550">
+                <div class="carousel-caption">
+                
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.sc.kku.ac.th/scienceweb/images/head/20200131-155523_.jpg" alt="Chicago" width="1100" height="550">
+                <div class="carousel-caption">
+                
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.sc.kku.ac.th/scienceweb/images/head/20200131-155523_.jpg" alt="New York" width="1100" height="550">
+                <div class="carousel-caption">
+                   
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.sc.kku.ac.th/scienceweb/images/head/20200131-155523_.jpg" alt="New York" width="1100"
+                    height="550">
+                <div class="carousel-caption">
+                 
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.sc.kku.ac.th/scienceweb/images/head/20200131-155523_.jpg" alt="New York" width="1100"
+                    height="550">
+                <div class="carousel-caption">
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.sc.kku.ac.th/scienceweb/images/head/20200131-155523_.jpg" alt="New York" width="1100"
+                    height="550">
+                <div class="carousel-caption">
+                
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <!-- ********************************************************************************** -->
+    <div class="d-flex p-3  justify-content-center for-person-all">
+        
+        
+                <ul class="nav d-flex justify-content-center  ">
+                    <li class="nav-item ">
+                        <a class="nav-link d-flex flex-column  for_person mx-3 " href="#"><span class="fas fa-child"></span> สำหรับนักเรียน</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex flex-column for_person mx-3  " href="#"><span class="fas fa-book-reader"></span>สำหรับนักศึกษา</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex flex-column for_person mx-3  " href="#"><span class="fas fa-users"></span>สำหรับบุคลากร</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex flex-column for_person mx-3 " href="#"><span class="fas fa-user-graduate"></span>สำหรับศิษย์เก่า</a>
+                    </li>
+                </ul>
+      
+       
+    </div>
+
+
+    <div class="container-fluid field mb-5 ">
+        <h4 class="title-field head-field1">หลักสูตรที่เปิดสอน</h4>
+        <div class="row">
+            <div class="group col-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="box_group shadow">
+                    <a href="degree.html">
+                        <img src="https://i2.wp.com/www.arts.chula.ac.th/~sandbox/aksorn/th/wp-content/uploads/2020/07/1249-scaled.jpg?fbclid=IwAR0_WMuYqpmCe5ZNUByyatvfHZReOHqqbor-m6AwiEnQL--hfCizZ98sG_s"
+                            alt="รูปตึกสาขาวิทยาการคอมพิวเตอร์">
+                        <h4 class="mt-4 ">ปริญญาตรี</h4> <br>
+    
+    
+                    </a>
+                </div>
+            </div>
+            <div class="group col-12 col-md-6  col-lg-6 col-xl-4">
+                <div class="box_group shadow">
+                    <a href="degree.html">
+                        <img src="https://i0.wp.com/www.arts.chula.ac.th/~sandbox/aksorn/th/wp-content/uploads/2020/07/3106-scaled.jpg?fbclid=IwAR0oLH-KNK90KacKJUi1NrNy4x6_l--XjZPVQVmgpLSi1vIUAuQpu2TT9CQ"
+                            alt="รูปตึกสาขาเทคโนโลยีสารสนเทศ">
+                        <h4 class="mt-4 ">ปริญญาโท</h4> <br>
+                    </a>
+                </div>
+            </div>
+            <div class="group col-12 col-md-6  col-lg-6 col-xl-4  mx-auto">
+                <div class="box_group shadow">
+                    <a href="degree.html">
+                        <img src="https://www.chula.ac.th/wp-content/uploads/2018/01/chula-faculty-dentistry-hero-desktop-768x480.jpg"
+                            alt="รูปตึกสาขาภูมิสารสนเทศ">
+                        <h4 class="mt-4">ปริญญาเอก</h4> <br>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="container-fluid news-box ">
+    <div class="tab-content">
+                     <p class="news head-field1">ข่าวประชาสัมพันธ์</p>
+
+                    <ul class="nav nav-pills  d-flex justify-content-center" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link  active" data-toggle="pill" href="#home" >ข่าวล่าสุด</a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link disabled" >/</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" nav-link " data-toggle="pill" href="#menu1">ทั่วไป</a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link disabled">/</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " data-toggle="pill" href="#menu2">วิจัย</a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link disabled">/</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " data-toggle="pill" href="#menu3">วิทยาศาสตร์</a>
+                        </li>
+                    </ul>
+  
+                        <div id="home" class=" container-fluid tab-pane active">
+                            
+                                <!-- ********************************************************************** -->
+                        <div class="row ">
+                            <div class="col-lg-3 col-md-6" >
+                                <div class="card">
+                                <div class="card-img-top card-img-top-url-1" ></div>
+                                    <div class="card-img-overlay text-center">
+                                         <a class="bi bi-link-45deg " href="#"></a>
+                                       
+                                    </div>
+                    
+                                <div class="card-body">
+                                  
+                                    <p class="card-text">นักศึกษาระดับบัณฑิตศึกษาคณะวิทยาศาสตร์ คว้ารางวัลจากการประกวดผลงานนวัตกรรม สาขานวัตกรรมเชิงพาณิชย์</p>
+                                   <p class="text-calendar "><span class="bi bi-calendar2-week-fill"></span> เผยแพร่เมื่อ: 11 ต.ค. 2564</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3  col-md-6">
+                                <div class="card">
+                                <div class="card-img-top card-img-top-url-2"></div>
+                                <div class="card-img-overlay text-center">
+                                    <a class="bi bi-link-45deg " href="#"></a>
+                                </div>
+                                <div class="card-body">
+                                <p class="card-text">นักศึกษาระดับบัณฑิตศึกษาคณะวิทยาศาสตร์ คว้ารางวัลจากการประกวดผลงานนวัตกรรม สาขานวัตกรรมเชิงพาณิชย์
+                                </p>
+                                <p class="text-calendar"><span class="bi bi-calendar2-week-fill"></span> เผยแพร่เมื่อ: 11 ต.ค. 2564</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3  col-md-6" >
+                                <div class="card">
+                                <div class="card-img-top card-img-top-url-3"></div>
+                                <div class="card-img-overlay text-center">
+                                    <a class="bi bi-link-45deg " href="#"></a>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">นักศึกษาระดับบัณฑิตศึกษาคณะวิทยาศาสตร์ คว้ารางวัลจากการประกวดผลงานนวัตกรรม สาขานวัตกรรมเชิงพาณิชย์
+                                    </p>
+                                    <p class="text-calendar"><span class="bi bi-calendar2-week-fill"></span> เผยแพร่เมื่อ: 11 ต.ค. 2564</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3  col-md-6">
+                                <div class="card">
+                                <div class="card-img-top card-img-top-url-4"></div>
+                                <div class="card-img-overlay text-center">
+                                    <a class="bi bi-link-45deg " href="#"></a>
+                                </div>
+                                <div class="card-body">
+                                <p class="card-text">นักศึกษาระดับบัณฑิตศึกษาคณะวิทยาศาสตร์ คว้ารางวัลจากการประกวดผลงานนวัตกรรม สาขานวัตกรรมเชิงพาณิชย์
+                                </p>
+                                <p class="text-calendar"><span class="bi bi-calendar2-week-fill"></span> เผยแพร่เมื่อ: 11 ต.ค. 2564</p>
+                                </div>
+                            </div>
+                                </div>
+                        </div>
+                        
+                            <!-- ********************************************************************** -->
+                        </div>
+                        <div id="menu1" class="container-fluid tab-pane fade">
+                                        <!-- ********************************************************************** -->
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-img-top card-img-top-url-1"></div>
+                                            <div class="card-img-overlay text-center">
+                                                <a class="bi bi-link-45deg " href="https://th.kku.ac.th/77181/"></a>
+                                
+                                            </div>
+                                
+                                            <div class="card-body">
+                                
+                                                <p class="card-text">นักศึกษาระดับบัณฑิตศึกษาคณะวิทยาศาสตร์ คว้ารางวัลจากการประกวดผลงานนวัตกรรม
+                                                    สาขานวัตกรรมเชิงพาณิชย์</p>
+                                                <p class="text-calendar"><span class="bi bi-calendar2-week-fill"></span> เผยแพร่เมื่อ: 11 ต.ค. 2564</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3  col-md-6">
+                                        <div class="card">
+                                            <div class="card-img-top card-img-top-url-2"></div>
+                                            <div class="card-img-overlay text-center">
+                                                <a class="bi bi-link-45deg " href="#"></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">นักศึกษาระดับบัณฑิตศึกษาคณะวิทยาศาสตร์ คว้ารางวัลจากการประกวดผลงานนวัตกรรม
+                                                    สาขานวัตกรรมเชิงพาณิชย์
+                                                </p>
+                                                <p class="text-calendar"><span class="bi bi-calendar2-week-fill"></span> เผยแพร่เมื่อ: 11 ต.ค. 2564</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3  col-md-6">
+                                        <div class="card">
+                                            <div class="card-img-top card-img-top-url-3"></div>
+                                            <div class="card-img-overlay text-center">
+                                                <a class="bi bi-link-45deg " href="#"></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">นักศึกษาระดับบัณฑิตศึกษาคณะวิทยาศาสตร์ คว้ารางวัลจากการประกวดผลงานนวัตกรรม
+                                                    สาขานวัตกรรมเชิงพาณิชย์
+                                                </p>
+                                                <p class="text-calendar"><span class="bi bi-calendar2-week-fill"></span> เผยแพร่เมื่อ: 11 ต.ค. 2564</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3  col-md-6">
+                                        <div class="card">
+                                            <div class="card-img-top card-img-top-url-4"></div>
+                                            <div class="card-img-overlay text-center">
+                                                <a class="bi bi-link-45deg " href="#"></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">นักศึกษาระดับบัณฑิตศึกษาคณะวิทยาศาสตร์ คว้ารางวัลจากการประกวดผลงานนวัตกรรม
+                                                    สาขานวัตกรรมเชิงพาณิชย์
+                                                </p>
+                                                <p class="text-calendar"><span class="bi bi-calendar2-week-fill"></span> เผยแพร่เมื่อ: 11 ต.ค. 2564</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                            <!-- ********************************************************************** -->
+                        </div>
+                        <div id="menu2" class="container-fluid tab-pane fade">
+                            <!-- ********************************************************************** -->
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-img-top card-img-top-url-1"></div>
+                                            <div class="card-img-overlay text-center">
+                                                <a class="bi bi-link-45deg " href="https://th.kku.ac.th/77181/"></a>
+                                
+                                            </div>
+                                
+                                            <div class="card-body">
+                                
+                                                <p class="card-text">นักศึกษาระดับบัณฑิตศึกษาคณะวิทยาศาสตร์ คว้ารางวัลจากการประกวดผลงานนวัตกรรม
+                                                    สาขานวัตกรรมเชิงพาณิชย์</p>
+                                                <p class="text-calendar"><span class="bi bi-calendar2-week-fill"></span> เผยแพร่เมื่อ: 11 ต.ค. 2564</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3  col-md-6">
+                                        <div class="card">
+                                            <div class="card-img-top card-img-top-url-2"></div>
+                                            <div class="card-img-overlay text-center">
+                                                <a class="bi bi-link-45deg " href="#"></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">นักศึกษาระดับบัณฑิตศึกษาคณะวิทยาศาสตร์ คว้ารางวัลจากการประกวดผลงานนวัตกรรม
+                                                    สาขานวัตกรรมเชิงพาณิชย์
+                                                </p>
+                                                <p class="text-calendar"><span class="bi bi-calendar2-week-fill"></span> เผยแพร่เมื่อ: 11 ต.ค. 2564</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3  col-md-6">
+                                        <div class="card">
+                                            <div class="card-img-top card-img-top-url-3"></div>
+                                            <div class="card-img-overlay text-center">
+                                                <a class="bi bi-link-45deg " href="#"></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">นักศึกษาระดับบัณฑิตศึกษาคณะวิทยาศาสตร์ คว้ารางวัลจากการประกวดผลงานนวัตกรรม
+                                                    สาขานวัตกรรมเชิงพาณิชย์
+                                                </p>
+                                                <p class="text-calendar"><span class="bi bi-calendar2-week-fill"></span> เผยแพร่เมื่อ: 11 ต.ค. 2564</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3  col-md-6">
+                                        <div class="card">
+                                            <div class="card-img-top card-img-top-url-4"></div>
+                                            <div class="card-img-overlay text-center">
+                                                <a class="bi bi-link-45deg " href="#"></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">นักศึกษาระดับบัณฑิตศึกษาคณะวิทยาศาสตร์ คว้ารางวัลจากการประกวดผลงานนวัตกรรม
+                                                    สาขานวัตกรรมเชิงพาณิชย์
+                                                </p>
+                                                <p class="text-calendar"><span class="bi bi-calendar2-week-fill"></span> เผยแพร่เมื่อ: 11 ต.ค. 2564</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- ********************************************************************** -->
+                        </div>
+                        <div id="menu3" class="container-fluid tab-pane fade">
+                        <!-- ********************************************************************** -->
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-img-top card-img-top-url-1"></div>
+                                            <div class="card-img-overlay text-center">
+                                                <a class="bi bi-link-45deg " href="https://th.kku.ac.th/77181/"></a>
+                                
+                                            </div>
+                                
+                                            <div class="card-body">
+                                
+                                                <p class="card-text">นักศึกษาระดับบัณฑิตศึกษาคณะวิทยาศาสตร์ คว้ารางวัลจากการประกวดผลงานนวัตกรรม
+                                                    สาขานวัตกรรมเชิงพาณิชย์</p>
+                                                <p class="text-calendar"><span class="bi bi-calendar2-week-fill"></span> เผยแพร่เมื่อ: 11 ต.ค. 2564</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3  col-md-6">
+                                        <div class="card">
+                                            <div class="card-img-top card-img-top-url-2"></div>
+                                            <div class="card-img-overlay text-center">
+                                                <a class="bi bi-link-45deg " href="#"></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">นักศึกษาระดับบัณฑิตศึกษาคณะวิทยาศาสตร์ คว้ารางวัลจากการประกวดผลงานนวัตกรรม
+                                                    สาขานวัตกรรมเชิงพาณิชย์
+                                                </p>
+                                                <p class="text-calendar"><span class="bi bi-calendar2-week-fill"></span> เผยแพร่เมื่อ: 11 ต.ค. 2564</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3  col-md-6">
+                                        <div class="card">
+                                            <div class="card-img-top card-img-top-url-3"></div>
+                                            <div class="card-img-overlay text-center">
+                                                <a class="bi bi-link-45deg " href="#"></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">นักศึกษาระดับบัณฑิตศึกษาคณะวิทยาศาสตร์ คว้ารางวัลจากการประกวดผลงานนวัตกรรม
+                                                    สาขานวัตกรรมเชิงพาณิชย์
+                                                </p>
+                                                <p class="text-calendar"><span class="bi bi-calendar2-week-fill"></span> เผยแพร่เมื่อ: 11 ต.ค. 2564</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3  col-md-6">
+                                        <div class="card">
+                                            <div class="card-img-top card-img-top-url-4"></div>
+                                            <div class="card-img-overlay text-center">
+                                                <a class="bi bi-link-45deg " href="#"></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">นักศึกษาระดับบัณฑิตศึกษาคณะวิทยาศาสตร์ คว้ารางวัลจากการประกวดผลงานนวัตกรรม
+                                                    สาขานวัตกรรมเชิงพาณิชย์
+                                                </p>
+                                                <p class="text-calendar"><span class="bi bi-calendar2-week-fill"></span> เผยแพร่เมื่อ: 11 ต.ค. 2564</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        
+                        <!-- ********************************************************************** -->
+                        </div>
+                <a href="news.html"  class="btn  nextpage d-block mx-auto "><span class="bi bi-arrow-right "></span>ดูเพิ่มเติม</a>
+    </div>
+    </div>
+<!-- *************************************************สาขา************************************************** -->
+<div class="container-fluid">
+    <div class="row  no-gutter justify-content-center  mt-3  mb-3 ">
+        <div class="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 ">
+            <p class="text-center mx-auto mt-3 mb-4  head-field1">ภาพกิจกรรม</p>
+        </div>
+    </div>
+    <div class="row no-gutter justify-content-center">
+        <div class="col-xl-4 col-md-6 col-12 content_picture">
+           
+                <div class="album1 d-flex flex-column justify-content-end my-3">
+                    <p class="text">ภาพกิจกรรมเปิดตัวคณะวิทยาลัยการคอมพิวเตอร์ มข</p>
+                </div>
+         
+        </div>
+        <div class="col-xl-4 col-md-6 col-12 content_picture">
+            
+                <div class="album2 d-flex flex-column justify-content-end my-3">
+                    <p class="text">วิทยาลัยการคอมพิวเตอร์ OPEN HOUSE 2564</p>
+                </div>
+           
+        </div>
+        <div class="col-xl-4 col-md-6 col-12 content_picture">
+         
+                <div class="album3 d-flex flex-column justify-content-end my-3">
+                    <p class="text">มุทิตาจิตผู้เกษียณอายุราชการ ประจำปี 2564</p>
+                </div>
+        
+        </div>
+    </div>
+    <a href="picture.html" class="btn  nextpage d-block mx-auto mt-4 "><span class="bi bi-arrow-right "></span>ดูเพิ่มเติม</a>
+</div>
+
+
+<!-- *************************************************สาขา**************************************************** -->
+<div class="container-fluid ">
+    <div id="accordion">
+        <div class="card mt-5">
+            <div class="card-header head-card">
+                <a class="card-link text-qick-link " data-toggle="collapse" href="#collapseOne">
+                 เชื่อมต่อ
+                 <span class="bi bi-chevron-up" id="arrow-up-quicklink"></span>
+                <span class="bi bi-chevron-down" id="arrow-down-quicklink" ></span>
+                </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="row">
+                            <div class="col-lg-3  col-md-6 mt-4">
+                                <p class="name-box-qick-link">ระบบ SCI-OFFICE</p>
+                                    <a href="https://sc.kku.ac.th/sciweb/images/homepage/link-scioffice.jpg" 
+                                    ><div class="card-img-top img-qicklink-1"></div></a>
+                            </div>
+                            <div class="col-lg-3  col-md-6 mt-4">
+                                <p class="name-box-qick-link">ระบบ KKU</p>
+                                <a href="https://sc.kku.ac.th/sciweb/images/homepage/link-scioffice.jpg">
+                                    <div class="card-img-top img-qicklink-1"></div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3  col-md-6 mt-4">
+                                <p class="name-box-qick-link">ระบบ KKU</p>
+                                <a href="https://sc.kku.ac.th/sciweb/images/homepage/link-scioffice.jpg">
+                                    <div class="card-img-top img-qicklink-1"></div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3  col-md-6 mt-4">
+                                <p class="name-box-qick-link">ระบบ KKU</p>
+                                <a href="https://sc.kku.ac.th/sciweb/images/homepage/link-scioffice.jpg">
+                                    <div class="card-img-top img-qicklink-1"></div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3  col-md-6 mt-4">
+                                <p class="name-box-qick-link">ระบบ KKU</p>
+                                <a href="https://sc.kku.ac.th/sciweb/images/homepage/link-scioffice.jpg">
+                                    <div class="card-img-top img-qicklink-1"></div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3  col-md-6 mt-4">
+                                <p class="name-box-qick-link">ระบบ KKU</p>
+                                <a href="https://sc.kku.ac.th/sciweb/images/homepage/link-scioffice.jpg">
+                                    <div class="card-img-top img-qicklink-1"></div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3  col-md-6 mt-4">
+                                <p class="name-box-qick-link">ระบบ KKU</p>
+                                <a href="https://sc.kku.ac.th/sciweb/images/homepage/link-scioffice.jpg">
+                                    <div class="card-img-top img-qicklink-1"></div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3  col-md-6 mt-4">
+                                <p class="name-box-qick-link">ระบบ KKU</p>
+                                <a href="https://sc.kku.ac.th/sciweb/images/homepage/link-scioffice.jpg">
+                                    <div class="card-img-top img-qicklink-1"></div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3  col-md-6 mt-4">
+                                <p class="name-box-qick-link">ระบบ KKU</p>
+                                <a href="https://sc.kku.ac.th/sciweb/images/homepage/link-scioffice.jpg">
+                                    <div class="card-img-top img-qicklink-1"></div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3  col-md-6 mt-4">
+                                <p class="name-box-qick-link">ระบบ KKU</p>
+                                <a href="https://sc.kku.ac.th/sciweb/images/homepage/link-scioffice.jpg">
+                                    <div class="card-img-top img-qicklink-1"></div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3  col-md-6 mt-4">
+                                <p class="name-box-qick-link">ระบบ KKU</p>
+                                <a href="https://sc.kku.ac.th/sciweb/images/homepage/link-scioffice.jpg">
+                                    <div class="card-img-top img-qicklink-1"></div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3  col-md-6 mt-4">
+                                <p class="name-box-qick-link">ระบบ KKU</p>
+                                <a href="https://sc.kku.ac.th/sciweb/images/homepage/link-scioffice.jpg">
+                                    <div class="card-img-top img-qicklink-1"></div>
+                                </a>
+                            </div>
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>
+
+<footer>
+    <div class="container-fulid footer-box mt-5">
+        <div class="row row_css">
+            <div class="col-md-3">
+                <p class="text-center  foot-text">ผู้ใช้งานเว็บไซต์</p>
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item"><a href="#">สำหรับนักเรียน</a></li>
+                    <li class="list-group-item"><a href="#">สำหรับนักศึกษา</a></li>
+                    <li class="list-group-item"><a href="#">สำหรับบุคลากร</a></li>
+                    <li class="list-group-item"><a href="#">สำหรับศิษย์เก่า</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <p class="text-center   foot-text">หลักสูตร/การเข้ารับศึกษา</p>
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item"><a href="#">ปริญญาตรี</a></li>
+                    <li class="list-group-item"><a href="#">ปริญญาโท</a></li>
+                    <li class="list-group-item"><a href="#">ปริญญาเอก</a></li>
+                    <li class="list-group-item"><a href="#">การรับเข้าศึกษา</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <p class="text-center  foot-text">เชื่อมต่อ</p>
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item"><a href="#">ข่าวทั้งหมด</a></li>
+                    <li class="list-group-item"><a href="#">ภาควิชา/สาขา</a></li>
+                    <li class="list-group-item"><a href="#">ระบบสารสนเทศ</a></li>
+                    <li class="list-group-item"><a href="#">รางวัลเกียรติยศ</a></li>
+                    <li class="list-group-item"><a href="#">มหาวิทยาลัยขอนแก่น</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="text_footer">
+                    <a href="#">
+                        <h4 class="text_footer_color01">COLLEGE OF COMPUTING</h4>
+                        <h4 class="text_footer_color02">KHON KAEN UNIVERSITY</h4>
+                        <h5 class="text_footer_color03">คณะวิทยาลัยการคอมพิวเตอร์ มหาวิทยาลัยขอนแก่น</h5>
+                    </a>
+                    <p>123 ถ. มิตรภาพ ต.ในเมือง อ.เมือง จ.ขอนแก่น 40002</p>
+                    <a href="#"><span class="bi bi-facebook mr-3"></span></a>
+                    <a href="#"><span class="bi bi-youtube mr-3"></span></a>
+                    <a href="#"><span class="bi bi-twitter"></span></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    <script>
+        $(document).ready(function () {
+
+             $('#collapseOne').on('shown.bs.collapse', function () {
+                   $("#arrow-down-quicklink").toggle();
+                 $(this).toggleClass("#arrow-down-quicklink")
+                 $("#arrow-up-quicklink").toggle();
+                 $(this).toggleClass("#arrow-up-quicklink")
+             })
+            $('#collapseOne').on('hidden.bs.collapse', function () {
+            $("#arrow-up-quicklink").toggle();
+                $(this).toggleClass("#arrow-up-quicklink")
+
+
+                  $("#arrow-down-quicklink").toggle();
+                $(this).toggleClass("#arrow-down-quicklink")
+                
+            })
+
+            // ***************************************************
+
+              $(".btn-search").click(function () {
+                $(".search-box-all").animate({
+                    height: 'toggle'
+                }, "fast");
+            });
+            $(".input-close").click(function () {
+                $(".search-box-all").animate({
+                    height: 'toggle'
+                }, "fast");
+
+            });
+
+
+
+            // ******************************************************
+           
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+
+            $('#back-to-top').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0       // สกอลไปบนสุด
+                }, 400);    // เวลา 400 ที่อนิเมชั่นเลื่อนขึ้น เป็น มิลลิเซค
+                return false;
+            });
+           
+        
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="search.css">
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+    <div class="search-box-all fix-top">
+        <form class="search-box" action="#">
+            <button class="input-close" type="submit"><i class="bi bi-x"></i></button>
+            <input class="input-search" type="text" placeholder="Search.." name="search">
+            <button class="input-btn" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+    </div>
+    <nav class="navbar navbar-expand-xl navbar-light" style="background-color: rgb(84, 144, 201);">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo" style="width:200px;">
+        </a>
+        <!-- -------PACK------- -->
+        <button class=" btn btn-search ml-auto mr-3" id="btn-search"><span class="bi bi-search"></span></button>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a id="dLabel" role="button" data-toggle="dropdown" class="btn-link dropdown-toggle" href="">
+                        เกี่ยวกับคณะ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="vision.html">วิสัยทัศน์/พันธกิจ/เป้าหมาย</a></li>
+                        <li><a class="dropdown-item" href="administrator.html">คณะผู้บริหาร</a></li>
+                        <li><a class="dropdown-item" href="branch_head.html">หัวหน้าสาขา</a></li>
+                        <li><a class="dropdown-item" href="department.html">ภาควิชา/สาขา</a></li>
+                        <li><a class="dropdown-item" href="contact.html">ติดต่อคณะ</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="dLabel" role="button" data-toggle="dropdown" class="btn-link dropdown-toggle" href="">
+                        การศึกษา
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">หลักสูตร ></a>
+                            <ul class="dropdown-menu color">
+                                <li><a class="dropdown-item drop2" tabindex="-1" href="degree.html">ปริญญาตรี</a></li>
+                                <li><a class="dropdown-item drop2" href="#">ปริญญาโท</a></li>
+                                <li><a class="dropdown-item drop2" href="#">ปริญญาเอก</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">ทุนการศึกษา</a></li>
+                        <li><a class="dropdown-item" href="#">บริการศึกษา</a></li>
+                        <li><a class="dropdown-item" href="calendar_study.html">ปฎิทินการศึกษา</a></li>
+                   
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="dLabel" role="button" data-toggle="dropdown" class="btn-link dropdown-toggle" href="">
+                        ข่าวประชาสัมพันธ์
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                        <li><a class="dropdown-item" href="news.html">ข่าวล่าสุด</a></li>
+                        <li><a class="dropdown-item" href="#">ทั่วไป</a></li>
+                        <li><a class="dropdown-item" href="#">วิจัย</a></li>
+                        <li><a class="dropdown-item" href="#">วิทยาศาสตร์</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="dLabel" role="button" data-toggle="dropdown" class="btn-link dropdown-toggle" href="">
+                        วิจัย/นวัตกรรม
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                        <li><a class="dropdown-item" href="research_results.html">ผลงานวิจัย</a></li>
+                        <li><a class="dropdown-item" href="#">ทรัพสินทางปัญญา</a></li>
+                        <li><a class="dropdown-item" href="meet.html">การประชุมวิชาการ</a></li>
+                        <li><a class="dropdown-item" href="#">กลุ่มวิจัยระดับมหาวิทยาลัย</a></li>
+                        <li><a class="dropdown-item" href="#">กองทุนวิจัย</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="dLabel" role="button" data-toggle="dropdown" class="btn-link dropdown-toggle" href="">
+                        ระบบสารสนเทศ
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                        <li><a class="dropdown-item" href="interest.html">ผู้สนใจเข้าศึกษา</a></li>
+                        <li><a class="dropdown-item" href="#">นักศึกษาปัจจุบัน</a></li>
+                        <li><a class="dropdown-item" href="#">บุคลากร</a></li>
+                        <li><a class="dropdown-item" href="#">ศิษย์เก่า</a></li>
+                        <li><a class="dropdown-item" href="diagram.html">แผนผังเว็บไซต์</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="dLabel" role="button" data-toggle="dropdown" class="btn-link dropdown-toggle" href="">
+                        รางวัลเกียรติยศ
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                        <li><a class="dropdown-item" href="international.html">ระดับนานาชาติ</a></li>
+                        <li><a class="dropdown-item" href="#">ระดับชาติ</a></li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">ระดับมหาวิทยาลัย ></a>
+                            <ul class="dropdown-menu color">
+                                <li><a class="dropdown-item drop2" tabindex="-1" href="#">ด้านวิจัย</a></li>
+                                <li><a class="dropdown-item drop2" href="award.html">รางวัลเชิดชูเกียรติสายผู้สอน</a></li>
+                                <li><a class="dropdown-item drop2" href="#">รางวัลเชิดชูเกียรติสายสนับสนุน</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">ระดับคณะ</a></li>
+                        <li><a class="dropdown-item" href="professor.html">ศาสตราจารในคณะ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- -------PACK------- -->
+        <button class=" btn btn-search ml-auto mr-3" id="btn-search2"><span class="bi bi-search"></span></button>
+    </nav>
+    <script>
+        $(document).ready(function () {
+
+            $(".btn-search").click(function () {
+                $(".search-box-all").animate({
+                    height: 'toggle'
+                }, "fast");
+            });
+            $(".input-close").click(function () {
+                $(".search-box-all").animate({
+                    height: 'toggle'
+                }, "fast");
+            });
+        })
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,35 @@
+body{
+     /* background-color: rgba(233, 233, 233, 0.082); */
+       font-family: 'Kanit', sans-serif;
+        background-color: rgb(255, 255, 255);
+}
+.box-content-in{
+   background-color: rgb(107, 171, 255);
+    width: 100%;
+    height: 10vh;
+}
+.box-content-in-2{
+    width: 100%;
+      height: 35vh;
+}
+.box-content-in-2 p{
+    font-size: 22px;
+    font-weight: 600;
+ 
+}
+.box-content-text{
+    text-align: center;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+.bi-calendar2-week-fill{
+    color: rgb(253, 56, 83);
+}
+.box-content{
+    transform: scale(1);
+}
+.box-content:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}  
